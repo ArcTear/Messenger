@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PeerGrade</name>
+    </assembly>
+    <members>
+        <member name="T:PeerGrade.Controllers.Controller1">
+            <summary>
+            Контроллер.
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.Post">
+            <summary>
+            Random initialization
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetUsersAndMessagesFromJSON">
+            <summary>
+            Десериализация данных из файлов Users.json и Messages.json.
+            </summary>
+            <returns>Выводит список десериализованных пользователей.</returns>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.Post(System.String,System.String,System.String,System.String)">
+            <summary>
+            Send custom message
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.Get(System.Int32,System.Int32)">
+            <summary>
+            Gets all users
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetMessages">
+            <summary>
+            Gets all messages
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.Get(System.String)">
+            <summary>
+            Получить имя пользователя по его почте.
+            </summary>
+            <param name="email">Почта пользователя</param>
+            <returns>Имя пользователя</returns>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetMessageBySender(System.String)">
+            <summary>
+            Gets messages by sender.
+            </summary>
+            <param name="senderId">ID of Sender</param>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetMessageByReceiver(System.String)">
+            <summary>
+            Gets messages by receiver.
+            </summary>
+            <param name="receiverId">ID of Receiver</param>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetMessageByReceiverAndSender(System.String,System.String)">
+            <summary>
+            Gets messages by a specific sender and receiver.
+            </summary>
+            <param name="receiverId">ID of Receiver</param>
+            <param name="senderId">ID of Sender</param>
+            <returns></returns>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.SerializationOfUsersAndMessages">
+            <summary>
+            Сериализация Пользователей и Сообщений.
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.FillUserList">
+            <summary>
+            Создает массив, заполненный случайными пользоваетлями.
+            </summary>
+            <returns>Созданный массив</returns>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.FillMessageList">
+            <summary>
+            Создает массив, заполненный случайными сообщениями.
+            </summary>
+            <returns>Созданный массив</returns>
+        </member>
+        <member name="M:PeerGrade.Controllers.Controller1.GetRandomText(System.Int32,System.Int32)">
+            <summary>
+            Генерирует случайный текст из букв и цифр.
+            </summary>
+            <param name="startLength">длина, от которой происходит генерация</param>
+            <param name="endLength">длина, до которой происходит генерация</param>
+            <returns>Созданный текст</returns>
+        </member>
+        <member name="T:PeerGrade.Models.Message1">
+            <summary>
+            Сообщения.
+            </summary>
+        </member>
+        <member name="P:PeerGrade.Models.Message1.Subject">
+            <summary>
+            тема
+            </summary>
+        </member>
+        <member name="P:PeerGrade.Models.Message1.Message">
+            <summary>
+            Текст сообщения.
+            </summary>
+        </member>
+        <member name="P:PeerGrade.Models.Message1.SenderId">
+            <summary>
+            Почта отправителя.
+            </summary>
+        </member>
+        <member name="P:PeerGrade.Models.Message1.ReceiverId">
+            <summary>
+            Почта получателя.
+            </summary>
+        </member>
+        <member name="M:PeerGrade.Program.Main(System.String[])">
+            <summary>
+            Точка исполнения.
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>
